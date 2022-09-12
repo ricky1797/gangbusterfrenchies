@@ -1,21 +1,19 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const Headerdiv = styled.div`
+
+export const Headerdiv =styled.div`
 height: 100vh;
-padding: 0 24px;
-background:radial-gradient(circle at 0% 95%, #497189 0%, #5786A3 24%, #3C5C70 58%, #2E4756 100%); //blue
+padding: 0 5px;
+background:radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(193, 193, 193, 1) 99%); //grey
 `
-export const InstagramWrapper = styled.div`
+export const Aboutwrapper=styled.div`
 width: 100%;
 margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-  justify-content: center;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
 `
 export const MainH1 = styled.h1`
+padding: 0 24px;
 font-family: 'Quicksand', sans-serif;
 font-size: 80px;
 margin-top:0px;
@@ -33,4 +31,15 @@ text-decoration-color:black;
   @media (max-width: 375px) {
     font-size: 30px;
   }
+`
+
+export const Ptag = styled.p`
+
+`
+
+export const Logo = styled.img`
+float:right;
+width: 170px;
+height: 130px;
+
 `

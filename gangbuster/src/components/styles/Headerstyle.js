@@ -4,6 +4,7 @@ import {Link} from 'react-scroll'
 
 export const Headerdiv = styled.div`
 height: 100vh;
+padding: 0 24px;
 background: url(${bg}) no-repeat center fixed ;
 background-position: center;
   background-repeat: no-repeat;
@@ -21,11 +22,18 @@ align-items: center;
 padding: 0 30px;
 height: 100vh;
 `
+export const MainH1 = styled.div`
+font-size:20px;
+@media screen and (max-width: 768px) {
+  font-size:15px;
+  }
+  @media screen and (max-width: 400px) {
+  font-size:13px;
+  }
+`
 
 export const MainBg = styled.div`
 position: relative;
-
-font-size:20px;
 height: 20vh;
 color: #fff;
 z-index:1;

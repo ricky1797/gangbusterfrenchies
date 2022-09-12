@@ -1,44 +1,48 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Image from '../images/gangbusters.png'
 import {Divide as Hambuger} from 'hamburger-react'
+import { animateScroll as scroll } from 'react-scroll';
 import {NavbarContainer,
     LeftContainer,
     RightContainer,
     NavbarInnerContainer,
     NavbarExtendedContainer,
     NavBarLinkContainer,
-    NavbarLink,
+    NavbarScroll,
+    NavLogo,
+    ExtendedNavbarScroll,
     OpenLinks,
-    ExtendedNavbarLink,
+
     Logo
 } from "../components/styles/NavBarstyle"
-function NavBar() {
+const NavBar=({ isOpen, toggle })=> {
 
 const [extendNavbar, setextendNavbar] =useState(false);
-
     return (
        <NavbarContainer extendNavbar={extendNavbar} className="Container">
            <NavbarInnerContainer>
            <LeftContainer>
+           <NavLogo to='Top'>
                <Logo src={Image}></Logo>
+               </NavLogo>
            </LeftContainer>
            <RightContainer>
                <NavBarLinkContainer>
                <OpenLinks>
                    <Hambuger toggled={extendNavbar} toggle={setextendNavbar} size={30}/>
                         </OpenLinks>
-                   <NavbarLink to='/'> Home</NavbarLink>
-                   <NavbarLink to='/available'> Available Pups</NavbarLink>
-                   <NavbarLink to='/aboutus'> About Us</NavbarLink>
-                   <NavbarLink to='/faq'> FAQ</NavbarLink>
+                   <NavbarScroll to='Top' smooth={true} duration={200}> Home</NavbarScroll>
+                   <NavbarScroll to='About' smooth={true} duration={200} offset={-80}> About Us</NavbarScroll>
+                   <NavbarScroll to='RecentPups' smooth={true} duration={200} offset={-80}> Recent Posts</NavbarScroll>
+                   <NavbarScroll to='ContactForm' smooth={true} duration={200} offset={-80}> Contact</NavbarScroll>
                </NavBarLinkContainer>
                </RightContainer>
            </NavbarInnerContainer>
            <NavbarExtendedContainer className={extendNavbar ? 'showContent content' : 'content'}>
-                   <ExtendedNavbarLink to='/'> Home</ExtendedNavbarLink>
-                   <ExtendedNavbarLink to='/available'> Available Pups</ExtendedNavbarLink>
-                   <ExtendedNavbarLink to='/aboutus'> About Us</ExtendedNavbarLink>
-                   <ExtendedNavbarLink to='/faq'> FAQ</ExtendedNavbarLink>
+                   <ExtendedNavbarScroll to='Top'> Home</ExtendedNavbarScroll>
+                   <ExtendedNavbarScroll to='About' offset={-80}> About Us</ExtendedNavbarScroll>
+                   <ExtendedNavbarScroll to='RecentPups'offset={-80}> Recent Posts</ExtendedNavbarScroll>
+                   <ExtendedNavbarScroll to='ContactForm' offset={-80}> Contact</ExtendedNavbarScroll>
            </NavbarExtendedContainer>
        </NavbarContainer>
     )

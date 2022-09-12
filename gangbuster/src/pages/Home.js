@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Header from '../components/Header'
-import Parents from '../components/Parents'
 import Intro from '../components/Intro'
 import Contact from '../components/Contact'
+import About from '../components/About'
+import Navbar from "../components/NavBar"
+import Footer from "../components/Footer"
 
 function Home() {
     return (
         <div>
+            <Navbar/>
             <Header/>
+            <About/>
             <Intro/>
-            <Parents/>
             <Contact/>
+            <Footer/>
         </div>
     )
 }

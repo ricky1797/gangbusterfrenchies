@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import TypeWriterEffect from 'react-typewriter-effect';
 import {Headerdiv,
     MainContainer,
     MainBg,
+    MainH1,
     Button,
     MainBtnWrapper,
     MainContent
@@ -10,19 +11,21 @@ import {Headerdiv,
 
 const Header= () => {
     return (
-        <Headerdiv>
+        <Headerdiv className='Top'>
             <MainContainer>
                 <MainBg className='Container'>
+                    <MainH1>
                     <TypeWriterEffect
-                    startDelay={140}
+                    startDelay={1000}
                     hideCursorAfterText={true}
                     cursorColor="white"
-                    text="Frenchies in LA!"
-                    typeSpeed={70}/>
+                    text="Looking for Frenchies?!"
+                    typeSpeed={80}/>
+                     </MainH1>
                 </MainBg>
                 <MainContent>
                 <MainBtnWrapper>
-                <Button to='ContactForm'primary='true' dark='true' fontBig='true'>Contact Us</Button>
+                <Button to='ContactForm'primary='true' dark='true' fontBig='true' offset={-80}>Contact Us</Button>
                 </MainBtnWrapper>
                 </MainContent>
             </MainContainer>
