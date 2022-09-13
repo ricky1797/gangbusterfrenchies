@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Image from '../images/gangbusters.png'
 import {Divide as Hambuger} from 'hamburger-react'
-import { animateScroll as scroll } from 'react-scroll';
 import {NavbarContainer,
     LeftContainer,
     RightContainer,

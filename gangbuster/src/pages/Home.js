@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../components/Header'
 import Intro from '../components/Intro'
 import Contact from '../components/Contact'
