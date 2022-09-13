@@ -5,18 +5,8 @@ const Footer = () => {
     <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="footer-col">
-                <h4>company</h4>
-                <ul>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our services</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>get help</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
+        <div class="footer-col">
+        <h4>Gangbuster Frenchies est. 2017</h4>
             </div>
             <div class="footer-col">
                 <h4>follow us</h4>

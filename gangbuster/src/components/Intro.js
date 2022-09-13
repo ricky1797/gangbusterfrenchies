@@ -13,8 +13,8 @@ function Intro() {
     }, [])
   return (
       <Headerdiv className='RecentPups'>
-        <MainH1 data-aos='fade-right'>Follow Us on Instagram!</MainH1>
-        <InstagramWrapper data-aos='zoom-in-up'>
+        <MainH1 data-aos='fade-right' data-aos-delay="300">Recent Posts</MainH1>
+        <InstagramWrapper data-aos='flip-left' data-aos-delay="300">
         <div class="elfsight-app-4db24dfc-8877-42a0-82d8-8342a8274077"></div>
         </InstagramWrapper>
       </Headerdiv>

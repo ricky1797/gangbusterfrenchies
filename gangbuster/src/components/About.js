@@ -6,7 +6,6 @@ import {Headerdiv,
   Aboutwrapper,
   MainH1,
   Logo,
-  CuteDog,
 Ptag
 } from './styles/Aboutstyle'
 
@@ -16,17 +15,21 @@ const About = () => {
     }, [])
   return (
     <Headerdiv className='About'>
-      <MainH1 data-aos='fade-right'>
+      <MainH1 data-aos='zoom-in-down' data-aos-delay="300">
         About
       </MainH1>
-      <Aboutwrapper data-aos='zoom-in-up'>
-      <Ptag>
-      Gangbusters Frenchies a well respected breeder in SoCal, we are an AKC certified dog breeder located one 
-hour outside of Los Angeles.
-</Ptag>
-<Ptag>
-We strive in excellence, every puppy is monitored throughout its stay with us to gurantee its health.
-Our mission is not only to deliver a healthy french bulldog but as well a good loking one.
+      <Aboutwrapper>
+      <Ptag data-aos='flip-left' data-aos-delay="300">
+      Gangbuster Frenchies is family owned & operated. We are a well respected breeder located in SoCal and have been in the business for over five years.
+      </Ptag>
+      <Ptag data-aos='flip-right'>We are located one hour outside of Los Angeles. We provide the best French Bulldogs and English Bulldogs
+      </Ptag>
+      <Ptag data-aos='flip-left' data-aos-delay="300">
+      Every puppy is monitored since birth to guarantee its health. 
+      All puppies include full AKC, pedigree, and vaccination records
+      </Ptag>
+      <Ptag data-aos='flip-right'>
+      Before finding a permanent home, every puppy gets cleared by a veterinarian to ensure its health upon relocation
       </Ptag>
       </Aboutwrapper>
       <Logo src={Image2}></Logo>

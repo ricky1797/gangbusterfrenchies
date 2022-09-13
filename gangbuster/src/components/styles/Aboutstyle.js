@@ -34,11 +34,14 @@ text-decoration-color:black;
 `
 
 export const Ptag = styled.p`
-
+font-size:20px;
+padding:10px;
+@media (max-width: 375px) {
+    font-size: 15px;
+  }
 `
 
 export const Logo = styled.img`
-float:right;
 width: 170px;
 height: 130px;
 

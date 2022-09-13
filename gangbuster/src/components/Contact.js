@@ -14,8 +14,8 @@ const Contact = () => {
     }, [])
   return (
 <Headerdiv className='ContactForm'> 
-<MainH1 data-aos='fade-right' className="Catamaran">We are all ears! </MainH1>
-<MainContainer data-aos='zoom-in-up'>
+<MainH1 data-aos='fade-right' data-aos-delay="300" className="Catamaran">We are all ears! </MainH1>
+<MainContainer data-aos='flip-right' data-aos-delay="300">
 <Form/>
     </MainContainer>
 </Headerdiv>
