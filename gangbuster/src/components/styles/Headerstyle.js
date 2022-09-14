@@ -13,6 +13,13 @@ opacity: 1;
 top: 0;
 right: 0;
 left: 0;
+
+@media screen and (max-width: 768px) {
+  background-size:300px
+  }
+  @media screen and (max-width: 400px) {
+    background-size:300px
+  }
 `
 
 export const MainContainer = styled.div`
