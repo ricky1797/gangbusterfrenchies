@@ -9,13 +9,14 @@ background: url(${bg}) no-repeat center fixed ;
 background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 opacity: 1;
 top: 0;
 right: 0;
 left: 0;
-@media screen and (max-width: 600px) {
-       background-size: 100% 100%;
-}
 `
 
 export const MainContainer = styled.div`
