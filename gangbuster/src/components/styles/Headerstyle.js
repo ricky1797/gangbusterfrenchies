@@ -28,10 +28,10 @@ height: 100vh;
 export const MainH1 = styled.div`
 font-size:20px;
 @media screen and (max-width: 768px) {
-  font-size:15px;
+  font-size:13px;
   }
   @media screen and (max-width: 400px) {
-  font-size:13px;
+  font-size:11px;
   }
 `
 
