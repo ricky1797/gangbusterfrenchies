@@ -125,7 +125,6 @@ transition: all 850ms ease-in-out;
 }
 &.showContent {
 height: 700px;
-overflow-y: scroll;
 }
 @media(min-width: 700px){
     display:none;
