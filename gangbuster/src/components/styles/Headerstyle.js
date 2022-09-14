@@ -6,9 +6,9 @@ export const Headerdiv = styled.div`
 height: 100vh;
 padding: 0 24px;
 background: url(${bg}) no-repeat center fixed ;
-background-position: center;
+background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 opacity: 1;
 top: 0;
 right: 0;
