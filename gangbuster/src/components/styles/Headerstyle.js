@@ -5,10 +5,13 @@ import {Link} from 'react-scroll'
 export const Headerdiv = styled.div`
 height: 100vh;
 padding: 0 24px;
-background: url(${bg}) no-repeat center fixed ;
-background-position: center center;
+background: url(${bg}) no-repeat center center ;
+background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 opacity: 1;
 top: 0;
 right: 0;
