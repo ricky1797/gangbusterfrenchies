@@ -12,6 +12,13 @@ Pink: #F28383
 
 
 */
+export const Logo = styled.img`
+margin: 0px;
+width: 170px;
+height: 130px;
+
+`
+
 export const NavbarContainer = styled.nav`
 background:radial-gradient(circle at 0% 95%, #497189 0%, #5786A3 24%, #3C5C70 58%, #2E4756 100%);
 font-family: 'Kumbh Sans', sans-serif;
@@ -31,61 +38,10 @@ z-index: 10;
   }
 
 `
-export const LeftContainer = styled.div`
-flex: 30%;
-display: flex;
-align-items:center;
-padding-left: 5%;
-
-`
-export const RightContainer = styled.div`
-flex: 70%;
-display: flex;
-justify-content: flex-end;
-padding-right: 50px;
-align-items:center;
-`
 export const NavbarInnerContainer = styled.div`
 width:100%;
 height:90px;
 display: flex;
-
-`
-export const NavBarLinkContainer = styled.div`
-display: flex;
-
-`
-
-export const NavbarScroll = styled(LinkS)`
-cursor: pointer;
-color:white;
-text-decoration: none;
-margin:10px;
-font-size: 1.3rem;
-&:hover {
-    transition: all 0.2s ease-in-out;
-    color: #F7941E;
-  }
-@media(max-width: 700px){
-    display:none;
-}
-`
-
-export const ExtendedNavbarScroll = styled(LinkS)`
-color:white;
-font-size: 1.3rem;
-text-decoration: none;
-margin:10px;
-&:hover {
-    transition: all 0.2s ease-in-out;
-    color: #F7941E;
-  }
-
-`
-export const Logo = styled.img`
-margin: 0px;
-width: 170px;
-height: 130px;
 
 `
 export const NavLogo = styled(LinkS)`
@@ -99,34 +55,48 @@ export const NavLogo = styled(LinkS)`
   font-weight: bold;
   text-decoration: none;
 `;
+export const MobileIcon = styled.div`
+  display: none;
 
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
 
-export const OpenLinks = styled.button`
-background: none;
-border:none;
-color:white;
-cursor:pointer;
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
 
-@media(min-width: 700px){
-    display:none;
-}
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
-`
+export const NavItem = styled.li`
+height: 80px;
+`;
 
-export const NavbarExtendedContainer = styled.div`
+export const NavLinks = styled(LinkS)`
+color: #fff;
 display: flex;
-flex-direction: column;
 align-items: center;
-transition: all 850ms ease-in-out;
-&.content{
-    height:0;
-    overflow:hidden;
-    
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+&.active {
+  border-bottom: 3px solid #F7941E;
 }
-&.showContent {
-height: 700px;
+&:hover {
+  color: #F7941E;
 }
-@media(min-width: 700px){
-    display:none;
-}
-`
+`;

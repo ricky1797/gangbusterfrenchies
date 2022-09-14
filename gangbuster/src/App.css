@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
+/*===========================================================================MAIN===========================================================================*/
 .App {
   text-align: center;
 }
@@ -24,7 +25,7 @@ html,body{
   outline: 1px solid red;
  }
   */
-/*Contact===========================================================================*/
+/*===========================================================================Contact===========================================================================*/
 .screen {
   position: relative;
   background: #3C7A89;
@@ -243,7 +244,7 @@ html,body{
   font-size: 15px;
   }
 }
-/*=======FOOTER========*/
+/*==================================================================================FOOTER===================================================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
 	line-height: 1.5;
